@@ -3,32 +3,104 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
-    /* Adjust the height as needed */
-    padding: 20px;
 }
 
 .content {
-    text-align: left;
-    margin-right: 20px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.text-content {
+    flex: 1 1 auto;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.text-content h1,
+.text-content p {
+    word-wrap: break-word;
+    line-break: strict;
+    white-space: normal;
+    max-width: 450px;
+    transition: transform 0.4s ease;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 50%;
+    overflow: visible;
 }
 
 .profile-image img {
-    height: 100%;
-    /* Adjust based on the actual size of your text block */
+    max-height: 100%;
     width: auto;
+    transition: transform 0.4s ease;
+    border-radius: 50%;
 }
 
 .footer-icons {
     position: absolute;
     bottom: 20px;
-    /* Adjust as needed */
     width: 100%;
     display: flex;
     justify-content: center;
-    /* This will center the icons in the footer */
 }
 
 .footer-icons img {
     margin: 0 10px;
-    /* Spacing between icons */
+    width: 44px;
+    height: 44px;
+    transition: transform 0.4s ease;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+
+.text-content h1:hover,
+.text-content p:hover,
+.profile-image img:hover {
+    transform: scale(1.1); 
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .text-content,
+    .profile-image {
+        max-width: 100%;
+        /* Full width on small screens */
+        margin-right: 0;
+        /* Remove right margin on small screens */
+    }
+
+    .text-content {
+        text-align: center;
+        /* Center text on small screens */
+    }
+
+    .profile-image img {
+        width: 50%;
+        /* Adjust image size on small screens */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin: 0 auto;
+        /* Center image horizontally */
+    }
 }
