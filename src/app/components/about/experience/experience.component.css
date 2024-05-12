@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    margin-top: 35px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 350px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.aboutme {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #e38b06 !important;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+}
+
+.description {
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-container {
+flex: 3;
+    /* Increase the flex value to give more space */
+    max-width: 80%;
+    /* Increase the max-width percentage if needed */
+}
+
+.text-container p {
+    margin: 0 0 10px 0;
+}
+
+
+.text-container p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        flex: 1;
+        /* Reset the flex to 1 on smaller screens */
+        max-width: 100%;
+        /* Allow text container to take full width */
+    }
+
+    .image-container {
+        max-width: 100%;
+        /* Allow image container to take full width */
+    }
+}
