@@ -57,16 +57,25 @@ flex: 3;
     text-align: justify;
 }
 
+/* Responsive adjustments for mobile screens */
 @media (max-width: 768px) {
-    .text-container {
-        flex: 1;
-        /* Reset the flex to 1 on smaller screens */
-        max-width: 100%;
-        /* Allow text container to take full width */
+    .container {
+        flex-direction: column;
+        /* Stack the children vertically */
     }
 
-    .image-container {
+    .image-container,
+    .text-container {
+        flex: none;
+        /* Remove the flex sizing */
         max-width: 100%;
-        /* Allow image container to take full width */
+        /* Allow each container to take the full width */
+        width: 100%;
+        /* Ensure they fill the parent */
+    }
+
+    .text-container {
+        margin-top: 20px;
+        /* Add some space between the image and text */
     }
 }
