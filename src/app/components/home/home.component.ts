@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  popoverVisible: { [key: number]: boolean } = {};
 
+  showPopover(index: number) {
+    this.popoverVisible[index] = true;
+  }
+
+  hidePopover(index: number) {
+    this.popoverVisible[index] = false;
+  }
 }

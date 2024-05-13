@@ -29,7 +29,18 @@
     color: white;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
+
+/* Media query for small devices */
+@media (max-width: 576px) {
+    .toggle-button {
+        padding: 10px 2px;
+        /* Reduce padding for smaller screens */
+        font-size: 12px;
+        /* Optional: reduce font size */
+    }
+
+    .toggle-bar {
+        flex-direction: column;
+        /* Stack buttons vertically if needed */
+    }
 }

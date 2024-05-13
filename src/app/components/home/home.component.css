@@ -1,16 +1,68 @@
-.home-container {
+/* Define header */
+.header {
+    height: 60px;
+    /* Adjust as necessary */
+    width: 100%;
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Ensure it is above other content */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
+.header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Define footer */
+.footer-section {
+    width: 100%;
+    background: white;
+    padding: 10px 0;
+    text-align: center;
+    height: 60px;
+    /* Adjust based on the actual footer height */
+    position: relative;
+    /* Ensure footer is within document flow */
+}
+
+/* Container setup */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Distribute space between elements */
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 60px;
+    /* Space for the header */
+    padding-bottom: 100px;
+    /* Space for the footer */
+    box-sizing: border-box;
+}
+
+/* Content area */
 .content {
     display: flex;
     width: auto;
     justify-content: center;
     align-items: center;
-    overflow: visible;
+    flex: 1;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 .text-content {
@@ -28,15 +80,21 @@
     transition: transform 0.4s ease;
 }
 
+.footer-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
 .profile-image {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 200px; 
-    height: 200px; 
-    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
     border-radius: 50%;
-    overflow: visible;
 }
 
 .profile-image img {
@@ -47,9 +105,6 @@
 }
 
 .footer-icons {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -61,16 +116,34 @@
     transition: transform 0.4s ease;
 }
 
+.icon-container {
+    position: relative;
+}
+
+.icon-container .popover {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: none;
+    /* Initially hide popovers */
+}
+
+.icon-container:hover .popover {
+    display: block;
+    /* Show popover on hover */
+}
+
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
 }
 
-
 .text-content h1:hover,
 .text-content p:hover,
 .profile-image img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .footer-icons img:hover {
@@ -78,29 +151,39 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .home-container {
+        padding-top: 60px;
+        /* Space for the header */
+        padding-bottom: 100px;
+        /* Space for the footer */
+        box-sizing: border-box;
+    }
+
     .content {
         flex-direction: column;
+        align-items: center;
+        /* Center items horizontally */
+        justify-content: center;
+        /* Center items vertically */
+        flex: 1;
+        /* Take up remaining space */
+    }
+
+    .text-content {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Add some space between text and image */
     }
 
     .text-content,
     .profile-image {
         max-width: 100%;
-        /* Full width on small screens */
-        margin-right: 0;
-        /* Remove right margin on small screens */
-    }
-
-    .text-content {
-        text-align: center;
-        /* Center text on small screens */
     }
 
     .profile-image img {
         width: 50%;
-        /* Adjust image size on small screens */
         height: auto;
-        /* Maintain aspect ratio */
         margin: 0 auto;
-        /* Center image horizontally */
     }
 }

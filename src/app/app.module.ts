@@ -14,6 +14,7 @@ import { TimelineComponent } from './components/about/timeline/timeline.componen
 import { ExperienceComponent } from './components/about/experience/experience.component';
 import { ProjectComponent } from './components/projects/project/project.component';
 import { ToggleComponent } from './components/projects/toggle/toggle.component';
+import { PopoverComponent } from './components/utils/popover/popover.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { ToggleComponent } from './components/projects/toggle/toggle.component';
         ProjectsComponent,
         ContactComponent,
         ProjectComponent,
-        ToggleComponent
+        ToggleComponent,
+        PopoverComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
