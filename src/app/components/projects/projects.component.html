@@ -1,3 +1,4 @@
+<app-toggle (selectionChange)="handleSelection($event)"></app-toggle>
 <div class="project-wrapper" *ngFor="let project of projects">
   <app-project
     [imageUrl]="project.imageUrl"

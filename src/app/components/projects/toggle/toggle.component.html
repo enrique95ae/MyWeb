@@ -1,0 +1,23 @@
+<div class="toggle-bar">
+  <button
+    class="toggle-button"
+    [class.selected]="selected === 'mobile'"
+    (click)="select('mobile')"
+  >
+    Mobile applications
+  </button>
+  <button
+    class="toggle-button"
+    [class.selected]="selected === 'web'"
+    (click)="select('web')"
+  >
+    Websites
+  </button>
+  <button
+    class="toggle-button"
+    [class.selected]="selected === 'backend'"
+    (click)="select('backend')"
+  >
+    Backend, services & APIs
+  </button>
+</div>

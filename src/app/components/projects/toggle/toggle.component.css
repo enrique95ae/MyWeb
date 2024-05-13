@@ -1,0 +1,35 @@
+.toggle-bar {
+    display: flex;
+    width: 100%;
+    /* Ensures it takes full width of its container, up to the max-width set by parent */
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 25px;
+    /* Optionally, add if not fully covered by parent due to overflow:hidden */
+    background: #fff;
+    /* Optional: set a background color if needed */
+}
+
+.toggle-button {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 20px auto;
+    margin-right: 20px auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.toggle-button.selected {
+    background-color: #e38b06;
+    /* Orange color for the selected button */
+    color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}

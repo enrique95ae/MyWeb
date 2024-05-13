@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 import { TimelineComponent } from './components/about/timeline/timeline.component';
 import { ExperienceComponent } from './components/about/experience/experience.component';
 import { ProjectComponent } from './components/projects/project/project.component';
+import { ToggleComponent } from './components/projects/toggle/toggle.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { ProjectComponent } from './components/projects/project/project.componen
         AboutComponent,
         ProjectsComponent,
         ContactComponent,
-        ProjectComponent
+        ProjectComponent,
+        ToggleComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

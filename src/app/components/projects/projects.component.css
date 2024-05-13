@@ -11,8 +11,28 @@
 app-project {
     flex: 0 1 auto;
     /* Flex-grow is 0, flex-shrink is 1, flex-basis is auto */
-    width: 80%;
+    width: 70%;
     /* Adjust width as needed to take less space */
     margin: 10px;
     /* Spacing between each project component */
+}
+
+/* Styles for the Toggle component container */
+app-toggle {
+    display: block;
+    /* Makes it a block element to take width adjustments */
+    margin: 20px auto;
+    /* Centers it horizontally and adds vertical spacing */
+    max-width: 40%;
+    /* Limits the width to 50% of the parent container */
+    border-radius: 25px;
+    /* Rounds the corners */
+    overflow: hidden;
+    /* Ensures no child content can overflow this rounding */
+}
+
+/* Additional global styles for buttons within app-toggle, if needed */
+app-toggle .toggle-button.selected {
+    background-color: #e38b06;
+    /* Changes the background color of the selected button */
 }

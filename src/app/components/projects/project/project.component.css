@@ -7,20 +7,22 @@
 }
 
 .image-container {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
     /* 60% width, no grow, no shrink */
     padding: 10px;
+    margin-right: 20px;
 }
 
 .image-container img {
-    width: 100%;
+    width: 80%;
     /* Make the image fill the container */
     height: auto;
     /* Maintain aspect ratio */
+    border-radius: 25px;
 }
 
 .info-container {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
     /* 40% width, no grow, no shrink */
     padding: 10px;
     display: flex;
@@ -30,7 +32,9 @@
 }
 
 .project-title {
-    margin: 0;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     /* Remove default margin */
 }
 
@@ -39,6 +43,9 @@
     /* Allows description to fill available space */
     margin: 10px 0;
     /* Provides space around the text */
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
 }
 
 .button-container {
