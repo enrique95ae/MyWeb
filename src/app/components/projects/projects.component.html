@@ -1,1 +1,8 @@
-<p>projects works!</p>
+<div class="project-wrapper" *ngFor="let project of projects">
+  <app-project
+    [imageUrl]="project.imageUrl"
+    [title]="project.title"
+    [description]="project.description"
+  >
+  </app-project>
+</div>

@@ -1,0 +1,18 @@
+.project-wrapper {
+    margin: 20px;
+    /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+app-project {
+    flex: 0 1 auto;
+    /* Flex-grow is 0, flex-shrink is 1, flex-basis is auto */
+    width: 80%;
+    /* Adjust width as needed to take less space */
+    margin: 10px;
+    /* Spacing between each project component */
+}
