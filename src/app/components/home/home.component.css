@@ -1,27 +1,13 @@
-/* Define footer */
-.footer-section {
-    width: 100%;
-    background: white;
-    padding: 10px 0;
-    text-align: center;
-    height: 60px;
-    /* Adjust based on the actual footer height */
-    position: relative;
-    /* Ensure footer is within document flow */
-    flex-shrink: 0;
-    /* Prevent the footer from shrinking */
-    margin-bottom: 100px;
-}
-
 /* Container setup */
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    /* Ensure the container takes at least the full viewport height */
+    /* Ensure the container takes the full viewport height */
     padding-top: 60px;
-    /* Space for the header */
+    padding-bottom: 100px;
+    /* Add bottom padding to accommodate footer */
     box-sizing: border-box;
     vertical-align: top;
 }
@@ -37,7 +23,7 @@
     margin: auto;
     vertical-align: top;
     flex: 1;
-    /* Allow the content area to grow and take up available space */
+    /* Allow the content area to grow and shrink as necessary */
 }
 
 .text-content {
@@ -54,13 +40,6 @@
     transition: transform 0.4s ease;
 }
 
-.footer-description {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    margin-bottom: 10px;
-    font-size: larger;
-}
-
 .profile-image {
     display: flex;
     vertical-align: top;
@@ -70,7 +49,8 @@
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    /* Reduced margin-bottom */
 }
 
 .profile-image img {
@@ -85,37 +65,10 @@
     display: flex;
     justify-content: center;
     padding: 20px 0;
-}
-
-.footer-icons {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-icons img {
-    margin: 0 10px;
-    width: 44px;
-    height: 44px;
-    transition: transform 0.4s ease;
-}
-
-.icon-container {
-    position: relative;
-}
-
-.icon-container .popover {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    display: none;
-    /* Initially hide popovers */
-}
-
-.icon-container:hover .popover {
-    display: block;
-    /* Show popover on hover */
+    /* Increase padding */
+    margin-bottom: 60px;
+    /* Add margin to accommodate footer */
+    z-index: 1001;
 }
 
 h1 {
@@ -129,32 +82,23 @@ h1 {
     transform: scale(1.1);
 }
 
-.footer-icons img:hover {
-    transform: scale(1.2);
-}
-
 @media (max-width: 768px) {
     .home-container {
         padding-top: 60px;
-        /* Space for the header */
         padding-bottom: 100px;
-        /* Space for the footer */
         box-sizing: border-box;
     }
 
     .content {
         flex-direction: column;
         align-items: center;
-        /* Center items horizontally */
         justify-content: center;
-        /* Center items vertically */
     }
 
     .text-content {
         text-align: center;
         margin-right: 0;
         margin-bottom: 20px;
-        /* Add some space between text and image */
     }
 
     .text-content,

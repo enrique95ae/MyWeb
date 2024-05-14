@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent  {
+
+
   popoverVisible: { [key: number]: boolean } = {};
 
   showPopover(index: number) {
@@ -15,4 +17,5 @@ export class HomeComponent {
   hidePopover(index: number) {
     this.popoverVisible[index] = false;
   }
+
 }

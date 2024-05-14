@@ -6,6 +6,8 @@
     font-weight: 300;
     /* Thin font weight */
     margin: 0px;
+    margin-bottom: 20px;
+    /* Add margin-bottom to ensure spacing */
     font-size: medium;
 }
 
@@ -23,8 +25,8 @@
 
 @media (max-width: 768px) {
     .quote-author {
-            font-size: smaller;
-        }
+        font-size: smaller;
+    }
 
     .quote {
         font-size: smaller;

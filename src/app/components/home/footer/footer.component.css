@@ -1,0 +1,56 @@
+.footer-section {
+    width: 100%;
+    background: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    /* Fix the footer to the bottom of the viewport */
+    bottom: 0;
+    left: 0;
+    height: auto;
+    /* Adjust height to auto to fit content */
+    flex-shrink: 0;
+    /* Prevent the footer from shrinking */
+    z-index: 1000;
+    /* Ensure the footer is above other elements */
+}
+
+.footer-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons img {
+    margin: 0 10px;
+    width: 44px;
+    height: 44px;
+    transition: transform 0.4s ease;
+}
+
+.icon-container {
+    position: relative;
+}
+
+.icon-container .popover {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: none;
+}
+
+.icon-container:hover .popover {
+    display: block;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
