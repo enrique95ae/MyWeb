@@ -54,3 +54,47 @@
 .footer-icons img:hover {
     transform: scale(1.2);
 }
+
+/* footer.component.css */
+
+.popover {
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    padding: 15px 20px;
+    /* Ensure padding is applied */
+    box-sizing: border-box;
+    /* Include padding in the total width/height */
+    border-radius: 25px;
+    border: 1px solid #666;
+    font-size: 12px;
+    white-space: initial;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+    transform: translateY(-0px);
+    z-index: 10;
+    /* Ensure it is on top */
+}
+
+.icon-container:hover .popover {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10px);
+    /* Adjust transform for smooth transition */
+}
+
+.popover.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-100px);
+    /* Keep the transform consistent */
+}
+
+.icon-container .popover {
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(100%);
+    z-index: 10;
+    display: none;
+}
