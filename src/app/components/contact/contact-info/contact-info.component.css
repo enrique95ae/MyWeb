@@ -1,0 +1,55 @@
+/* Fullscreen container to center content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    /* Optional: background color for visual clarity */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 10px
+    /* Ensure row takes full width */
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    object-fit:contain;
+    /* Ensure the image fits within the square dimensions */
+}
+
+.button {
+    padding: 8px 16px;
+    background-color: #e38b06;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Prevent button from shrinking */
+}
+
+.button:hover {
+    background-color: #eb7900;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}

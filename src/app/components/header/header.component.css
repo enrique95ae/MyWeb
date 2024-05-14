@@ -1,26 +1,25 @@
 .header {
     display: flex;
     justify-content: space-between;
-    /* This spreads out the navbar brand and navbar toggle/nav-items */
     align-items: center;
-    /* This vertically centers the items in the navbar */
 }
 
 .navbar-brand {
     font-weight: bolder;
 }
 
+.navbar-brand .dev {
+    color: #e38b06;
+}
+
 .navbar-collapse {
     justify-content: flex-end;
-    /* Aligns nav items to the right */
 }
 
 .navbar-nav {
     flex-direction: row;
-    /* Ensures nav items are in a row */
 }
 
 .nav-link {
     padding-right: 15px;
-    /* Adds spacing between nav items */
 }

@@ -1,0 +1,33 @@
+<div class="container">
+  <div>
+    <!-- Row 1: Title -->
+    <div>
+      <h1>{{ title }}</h1>
+    </div>
+
+    <!-- Row 2: Short Description -->
+    <div>
+      <p>{{ description }}</p>
+    </div>
+
+    <!-- Row 3: Icon and Button to Website -->
+    <div class="row">
+      <img src="assets/linkedin.png" alt="Icon" class="icon" />
+      <button (click)="openWebsite()" class="button">Conect on LinkedIn</button>
+    </div>
+
+    <!-- Row 4: Icon and Button to Open Email App -->
+    <div class="row">
+      <img src="assets/email.png" alt="Email Icon" class="icon" />
+      <button (click)="sendEmail()" class="button">Email me</button>
+    </div>
+
+    <!-- Row 5: Icon and Button to Download File -->
+    <div class="row">
+      <img src="assets/pdf.png" alt="Download Icon" class="icon" />
+      <button (click)="downloadFile()" class="button">
+        Download my resume
+      </button>
+    </div>
+  </div>
+</div>

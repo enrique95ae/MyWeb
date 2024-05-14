@@ -17,6 +17,7 @@ import { ToggleComponent } from './components/projects/toggle/toggle.component';
 import { PopoverComponent } from './components/utils/popover/popover.component';
 import { QuoteComponent } from './components/home/quote/quote.component';
 import { FooterComponent } from './components/home/footer/footer.component';
+import { ContactInfoComponent } from './components/contact/contact-info/contact-info.component';
 
 @NgModule({
     declarations: [
@@ -40,7 +41,8 @@ import { FooterComponent } from './components/home/footer/footer.component';
         TimelineComponent,
         ExperienceComponent,
         QuoteComponent,
-        FooterComponent
+        FooterComponent,
+        ContactInfoComponent
     ]
 })
 export class AppModule { }
