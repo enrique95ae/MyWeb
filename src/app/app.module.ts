@@ -15,6 +15,7 @@ import { ExperienceComponent } from './components/about/experience/experience.co
 import { ProjectComponent } from './components/projects/project/project.component';
 import { ToggleComponent } from './components/projects/toggle/toggle.component';
 import { PopoverComponent } from './components/utils/popover/popover.component';
+import { QuoteComponent } from './components/home/quote/quote.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import { PopoverComponent } from './components/utils/popover/popover.component';
         RouterModule,
         AppRoutingModule,
         TimelineComponent,
-        ExperienceComponent
+        ExperienceComponent,
+        QuoteComponent
     ]
 })
 export class AppModule { }

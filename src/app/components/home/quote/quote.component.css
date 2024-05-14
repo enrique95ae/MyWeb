@@ -1,0 +1,34 @@
+.quote {
+    font-family: 'Georgia', serif;
+    /* Choose a cursive-like serif font */
+    color: rgb(182, 182, 182);
+    font-style: italic;
+    font-weight: 300;
+    /* Thin font weight */
+    margin: 0px;
+    font-size: medium;
+}
+
+.quote-text {
+    margin-bottom: 10px;
+}
+
+.quote-author {
+    text-align: right;
+    /* Align author to the right */
+    font-style: normal;
+    /* Remove italic from author text */
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .quote-author {
+            font-size: smaller;
+        }
+
+    .quote {
+        font-size: smaller;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
