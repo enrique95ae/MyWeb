@@ -84,18 +84,21 @@ h2 {
 h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    color: #666;
 }
 
 .date {
     font-family: 'Poppins', sans-serif;
     font-size: medium;
     font-weight: 500;
+    color: #666;
 }
 
 .description {
     font-family: 'Poppins', sans-serif;
     font-size: small;
     font-weight: 400;
+    color: #666;
 }
 
 .container img {

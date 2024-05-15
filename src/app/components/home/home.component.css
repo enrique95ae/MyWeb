@@ -76,6 +76,10 @@ h1 {
     font-weight: 800;
 }
 
+p {
+    color: #666;
+}
+
 .text-content h1:hover,
 .text-content p:hover,
 .profile-image img:hover {
