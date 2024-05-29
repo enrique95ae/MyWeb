@@ -52,9 +52,9 @@ projects = [
             description: 'This is a smart health web application that helps users to track their health and fitness goals. It has a user-friendly interface and provides a seamless experience to the users. It is developed using Angular and integrates my custom made Python Flask API. Among the features are account creation, user authentication, meal creation and tracking, weight tracking, food database consults and more! '
           },
           {
-            imageUrl: 'path_to_image2.jpg',
-            title: 'Project Title 2',
-            description: 'Description for Project 2'
+            imageUrl: 'AirlineManagerSeatCalculator.png',
+            title: 'AM4 Seat Calculator',
+            description: 'A simple Angular one page website that helps Airline Manager 4 players find the optimal seat distribution for their planes. It visually replicates an avionics EFIS system. It takes 4 inputs and returns the optimal distribution based on the provided data.'
           }
         ];
     }
