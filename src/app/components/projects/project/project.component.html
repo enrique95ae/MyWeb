@@ -6,6 +6,20 @@
     <h2 class="project-title">{{ title }}</h2>
     <p class="project-description">{{ description }}</p>
     <div class="button-container">
+      <a
+        *ngIf="githubLink && githubLink.trim()"
+        [href]="githubLink"
+        class="github-button"
+        target="_blank"
+        >GitHub</a
+      >
+      <a
+        *ngIf="demoLink && demoLink.trim()"
+        [href]="demoLink"
+        class="demo-button"
+        target="_blank"
+        >Visit Demo</a
+      >
       <button type="button">Learn More</button>
     </div>
   </div>

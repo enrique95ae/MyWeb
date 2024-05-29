@@ -1,48 +1,38 @@
 .project-container {
     display: flex;
     width: 100%;
-    /* Adjust as necessary */
     margin-bottom: 20px;
-    /* Space between project entries if multiple */
 }
 
 .image-container {
     flex: 0 0 50%;
-    /* 60% width, no grow, no shrink */
     padding: 10px;
     margin-right: 20px;
 }
 
 .image-container img {
     width: 80%;
-    /* Make the image fill the container */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 25px;
 }
 
 .info-container {
     flex: 0 0 50%;
-    /* 40% width, no grow, no shrink */
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Aligns child elements to each space evenly */
 }
 
 .project-title {
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    /* Remove default margin */
 }
 
 .project-description {
     flex-grow: 1;
-    /* Allows description to fill available space */
     margin: 10px 0;
-    /* Provides space around the text */
     color: #666;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
@@ -51,31 +41,44 @@
 .button-container {
     display: flex;
     justify-content: flex-end;
-    /* Aligns button to the right */
+    gap: 10px;
 }
 
-.button-container button {
+.button-container button,
+.button-container a {
     padding: 10px 20px;
-    /* Padding around the text */
     background-color: #e38b06;
-    /* Orange background color */
     color: white;
-    /* White text color for better contrast */
     border: none;
-    /* Removes default border */
     border-radius: 20px;
-    /* Rounded corners with a radius of 20px */
     cursor: pointer;
-    /* Changes the cursor to a pointer on hover */
     font-weight: bold;
-    /* Makes the text bold */
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     transition: background-color 0.3s;
-    /* Smooth transition for hover effect */
 }
 
-.button-container button:hover {
+.button-container button:hover,
+.button-container a:hover {
     background-color: #cc7a05;
-    /* Slightly darker orange on hover for feedback */
+}
+
+.button-container .demo-button {
+    background-color: white;
+    color: #e38b06;
+    border: 2px solid #e38b06;
+}
+
+.button-container .github-button {
+    background-color: white;
+    color: lightgray;
+    border: 2px solid lightgray;
+}
+
+.button-container .demo-button:hover,
+.button-container .github-button:hover {
+    background-color: #f7e2c1;
 }
 
 @media (max-width: 768px) {
@@ -86,19 +89,15 @@
     .image-container,
     .info-container {
         flex: 0 0 100%;
-        /* Full width on small screens */
     }
 }
 
 .image-container {
     flex: 0 0 48%;
-    /* Reduce the original 60% to a smaller percentage */
     padding: 10px;
 }
 
 .image-container img {
     width: 100%;
-    /* This makes the image responsive within the container */
     height: auto;
-    /* Maintains the aspect ratio of the image */
 }

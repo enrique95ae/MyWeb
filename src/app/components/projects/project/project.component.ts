@@ -9,4 +9,6 @@ export class ProjectComponent {
   @Input() imageUrl: string | undefined;
   @Input() title: string | undefined;
   @Input() description: string | undefined;
+  @Input() demoLink: string | undefined;
+  @Input() githubLink: string | undefined;
 }
