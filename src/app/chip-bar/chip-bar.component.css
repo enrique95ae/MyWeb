@@ -1,0 +1,21 @@
+.chip-bar-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 5px;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.chip {
+    display: inline-block;
+    padding: 2px 10px;
+    /* Smaller padding */
+    border-radius: 15px;
+    /* Adjusted for smaller size */
+    color: white;
+    font-weight: bold;
+    font-size: 0.875rem;
+    /* Smaller font size */
+    text-align: center;
+    white-space: nowrap;
+}

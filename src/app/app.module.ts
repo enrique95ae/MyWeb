@@ -18,6 +18,7 @@ import { PopoverComponent } from './components/utils/popover/popover.component';
 import { QuoteComponent } from './components/home/quote/quote.component';
 import { FooterComponent } from './components/home/footer/footer.component';
 import { ContactInfoComponent } from './components/contact/contact-info/contact-info.component';
+import { ChipBarComponent } from './chip-bar/chip-bar.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import { ContactInfoComponent } from './components/contact/contact-info/contact-
         ContactComponent,
         ProjectComponent,
         ToggleComponent,
-        PopoverComponent
+        PopoverComponent,
+        ChipBarComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

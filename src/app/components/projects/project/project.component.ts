@@ -1,5 +1,10 @@
 import { Component, Input } from '@angular/core';
 
+interface ChipItem {
+  color: string;
+  text: string;
+}
+
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
@@ -11,4 +16,5 @@ export class ProjectComponent {
   @Input() description: string | undefined;
   @Input() demoLink: string | undefined;
   @Input() githubLink: string | undefined;
+  @Input() chipItems: ChipItem[] | undefined;
 }

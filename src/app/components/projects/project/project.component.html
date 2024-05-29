@@ -4,21 +4,25 @@
   </div>
   <div class="info-container">
     <h2 class="project-title">{{ title }}</h2>
+    <app-chip-bar
+      *ngIf="chipItems && chipItems.length"
+      [items]="chipItems"
+    ></app-chip-bar>
     <p class="project-description">{{ description }}</p>
     <div class="button-container">
       <a
-        *ngIf="githubLink && githubLink.trim()"
-        [href]="githubLink"
-        class="github-button"
-        target="_blank"
-        >GitHub</a
-      >
-      <a
         *ngIf="demoLink && demoLink.trim()"
         [href]="demoLink"
-        class="demo-button"
         target="_blank"
+        class="demo-button"
         >Visit Demo</a
+      >
+      <a
+        *ngIf="githubLink && githubLink.trim()"
+        [href]="githubLink"
+        target="_blank"
+        class="github-button"
+        >GitHub</a
       >
       <button type="button">Learn More</button>
     </div>

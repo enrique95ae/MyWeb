@@ -1,0 +1,9 @@
+<div class="chip-bar-container">
+  <div
+    class="chip"
+    *ngFor="let item of items"
+    [ngStyle]="{ 'background-color': item.color }"
+  >
+    {{ item.text }}
+  </div>
+</div>
