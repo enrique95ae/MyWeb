@@ -86,7 +86,7 @@ export class ProjectsComponent {
         {
           imageUrl: 'assets/AirlineManagerSeatCalculator.png',
           title: 'AM4 Seat Calculator',
-          description: 'A simple Angular one page website that helps Airline Manager 4 players find the optimal seat distribution for their planes. It visually replicates an avionics EFIS system. It takes 4 inputs and returns the optimal distribution based on the provided data.',
+          description: 'A simple Angular one page website that helps Airline Manager 4 players find the optimal seat distribution for their planes. It visually replicates an avionics MCDU system. It takes 4 inputs and returns the optimal distribution based on the provided data.',
           demoLink: 'https://enrique95ae.github.io/AirlineManagerSeatCalculator/',
           githubLink: 'https://github.com/enrique95ae/AirlineManagerSeatCalculator',
           chipItems: [
