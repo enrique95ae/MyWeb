@@ -1,7 +1,7 @@
 .card {
     border: 2px solid #e38b06;
     border-radius: 10px;
-    padding: 10px; /* Reduced padding */
+    padding: 10px;
     margin: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 300px;
@@ -17,13 +17,13 @@
   }
   
   .card-image {
-    width: calc(100% + 20px); /* Make the image take the full width minus padding */
-    margin-left: -10px; /* Offset the left padding */
-    margin-right: -10px; /* Offset the right padding */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height */
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+    height: auto;
+    max-height: 200px;
     margin-bottom: 10px;
-    object-fit: cover; /* Crop the image if necessary while maintaining aspect ratio */
+    object-fit: cover;
   }
   
   .card-description {
@@ -33,7 +33,7 @@
     margin-bottom: 0px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
   }
