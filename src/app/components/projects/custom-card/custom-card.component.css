@@ -1,0 +1,54 @@
+.card {
+    border: 2px solid #e38b06;
+    border-radius: 10px;
+    padding: 10px; /* Reduced padding */
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: #e38b06;
+    margin-bottom: 10px;
+  }
+  
+  .card-image {
+    width: calc(100% + 20px); /* Make the image take the full width minus padding */
+    margin-left: -10px; /* Offset the left padding */
+    margin-right: -10px; /* Offset the right padding */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height */
+    margin-bottom: 10px;
+    object-fit: cover; /* Crop the image if necessary while maintaining aspect ratio */
+  }
+  
+  .card-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-bottom: 0px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+  
+  .card-button {
+    background-color: #e38b06;
+    color: white;
+    border: 2px solid #e38b06;
+    padding: 5px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .card-button:hover {
+    background-color: #cf7a04;
+  }
+  

@@ -7,7 +7,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class ToggleComponent {
   @Output() selectionChange = new EventEmitter<string>();
-  selected = 'mobile'; // Default selected option
+  selected = 'web'; // Default selected option
 
   select(option: string) {
     this.selected = option;

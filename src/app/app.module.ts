@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router'; // Make sure RouterModule is imported
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -20,6 +20,7 @@ import { FooterComponent } from './components/home/footer/footer.component';
 import { ContactInfoComponent } from './components/contact/contact-info/contact-info.component';
 import { ChipBarComponent } from './chip-bar/chip-bar.component';
 import { HealthAppWebDetailsComponent } from './components/projects/health-app-web-details/health-app-web-details.component';
+import { CustomCardComponent } from './components/projects/custom-card/custom-card.component';
 
 @NgModule({
     declarations: [
@@ -33,7 +34,8 @@ import { HealthAppWebDetailsComponent } from './components/projects/health-app-w
         ToggleComponent,
         PopoverComponent,
         ChipBarComponent,
-        HealthAppWebDetailsComponent
+        HealthAppWebDetailsComponent,
+        CustomCardComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -46,7 +48,7 @@ import { HealthAppWebDetailsComponent } from './components/projects/health-app-w
         ExperienceComponent,
         QuoteComponent,
         FooterComponent,
-        ContactInfoComponent
+        ContactInfoComponent,
     ]
 })
 export class AppModule { }
