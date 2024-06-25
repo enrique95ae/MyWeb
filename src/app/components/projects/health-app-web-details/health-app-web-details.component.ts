@@ -28,7 +28,14 @@ export class HealthAppWebDetailsComponent implements OnInit {
       imageUrl: 'assets/GitHub.png',
       description: 'Visit the code hosted on GitHub, explore the project and feel free to clone it and modify it.',
       buttonText: 'See code',
-      link: 'https://github.com/your-repo'
+      link: 'https://github.com/enrique95ae/HealthApp_Web'
+    },
+    {
+      title: 'API Documentation',
+      imageUrl: 'assets/HWA/HWA_API.png',
+      description: 'Visit the code hosted on GitHub, explore the project and feel free to clone it and modify it.',
+      buttonText: 'See code',
+      link: 'https://github.com/enrique95ae/HealthApp_Web'
     }
   ];
 
