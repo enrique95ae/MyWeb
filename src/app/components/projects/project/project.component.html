@@ -24,7 +24,9 @@
         class="github-button"
         >GitHub</a
       >
-      <button type="button">Learn More</button>
+      <a *ngIf="detailsLink" [routerLink]="detailsLink" class="details-button">
+        Learn More
+      </a>
     </div>
   </div>
 </div>

@@ -17,4 +17,5 @@ export class ProjectComponent {
   @Input() demoLink: string | undefined;
   @Input() githubLink: string | undefined;
   @Input() chipItems: ChipItem[] | undefined;
+  @Input() detailsLink: string | undefined;
 }

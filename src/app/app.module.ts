@@ -19,6 +19,7 @@ import { QuoteComponent } from './components/home/quote/quote.component';
 import { FooterComponent } from './components/home/footer/footer.component';
 import { ContactInfoComponent } from './components/contact/contact-info/contact-info.component';
 import { ChipBarComponent } from './chip-bar/chip-bar.component';
+import { HealthAppWebDetailsComponent } from './components/projects/health-app-web-details/health-app-web-details.component';
 
 @NgModule({
     declarations: [
@@ -31,7 +32,8 @@ import { ChipBarComponent } from './chip-bar/chip-bar.component';
         ProjectComponent,
         ToggleComponent,
         PopoverComponent,
-        ChipBarComponent
+        ChipBarComponent,
+        HealthAppWebDetailsComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
