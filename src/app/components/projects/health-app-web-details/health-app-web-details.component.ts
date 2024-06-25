@@ -45,8 +45,8 @@ export class HealthAppWebDetailsComponent implements OnInit {
         if (entry.isIntersecting) {
           setTimeout(() => {
             entry.target.classList.add('visible');
-          }, index * 200); // staggered effect
-          observer.unobserve(entry.target); // Stop observing once the element is visible
+          }, index * 200);
+          observer.unobserve(entry.target);
         }
       });
     });
