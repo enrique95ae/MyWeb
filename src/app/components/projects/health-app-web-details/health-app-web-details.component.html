@@ -1,6 +1,6 @@
-<div class="details-container">
-  <h1 class="title">Health Web App</h1>
-  <ul class="bullet-points">
+<div class="details-container observed">
+  <h1 class="title observed" @fadeIn>Health Web App</h1>
+  <ul class="bullet-points observed" @fadeIn>
     <li>
       <span class="bullet-title">Technologies used:</span>
       <span class="bullet-description">Angular, HTML and CSS</span>
@@ -16,23 +16,24 @@
   </ul>
 
   <!-- Card components side by side -->
-  <div class="card-container">
+  <div class="card-container observed" @fadeIn>
     <app-custom-card
-      *ngFor="let card of cards"
+      *ngFor="let card of cards; let i = index"
       [title]="card.title"
       [imageUrl]="card.imageUrl"
       [description]="card.description"
       [buttonText]="card.buttonText"
       [link]="card.link || ''"
       [fileUrl]="card.fileUrl || ''"
+      [@fadeIn]="{ value: '', params: { delay: i * 200 } }"
     ></app-custom-card>
   </div>
 
-  <p class="description">
+  <p class="description observed" @fadeIn>
     This project exemplifies my knowledge of the entire SDLC cycle. Along with the API this angular website constitutes a Full Stack full scope project. I have based my efforts in applying modern design patterns, coding, naming and organizing conventions. I have also taken into consideration the UI/UX face of web projects making not only an easy on the eyes web but also very intuitive.
   </p>
 
-  <div class="content-container">
+  <div class="content-container observed" @fadeIn>
     <img src="assets/HWA/HWA_Home.png" alt="Health App Image" class="details-image">
     <div class="text-block">
       <p class="section-title">Dashboard</p>
@@ -42,7 +43,7 @@
     </div>
   </div>
 
-  <div class="content-container">
+  <div class="content-container observed" @fadeIn>
     <div class="text-block">
       <p class="section-title">Meals and Ingredients module</p>
       <p class="description">
@@ -58,7 +59,7 @@
     <img src="assets/HWA/MealsSummary.png" alt="Meal Tracker Image" class="details-image">
   </div>
 
-  <div class="content-container">
+  <div class="content-container observed" @fadeIn>
     <img src="assets/HWA/Graphs.png" alt="Health App Image" class="details-image">
     <div class="text-block">
       <p class="section-title">Graph summaries</p>
@@ -68,7 +69,7 @@
     </div>
   </div>
 
-  <div class="content-container">
+  <div class="content-container observed" @fadeIn>
     <div class="text-block">
       <p class="section-title">Workouts module</p>
       <p class="description">

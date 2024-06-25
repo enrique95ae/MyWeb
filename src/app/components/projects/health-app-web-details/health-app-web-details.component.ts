@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-health-app-web-details',
   templateUrl: './health-app-web-details.component.html',
-  styleUrls: ['./health-app-web-details.component.css']
+  styleUrls: ['./health-app-web-details.component.css'],
+  animations: [
+    trigger('fadeIn', [
+      state('void', style({ opacity: 0, transform: 'translateY(20px)' })),
+      transition(':enter', [
+        animate('0.5s ease-out')
+      ])
+    ])
+  ]
 })
-export class HealthAppWebDetailsComponent {
+export class HealthAppWebDetailsComponent implements OnInit {
   cards = [
     {
       title: 'SRS Documentation',
@@ -23,14 +32,31 @@ export class HealthAppWebDetailsComponent {
     }
   ];
 
+  ngOnInit() {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, index * 200); // staggered effect
+          observer.unobserve(entry.target); // Stop observing once the element is visible
+        }
+      });
+    });
+
+    document.querySelectorAll('.observed').forEach(element => {
+      observer.observe(element);
+    });
+  }
+
   navigateTo(link: string) {
     window.open(link, '_blank');
   }
 
   downloadFile(fileUrl: string) {
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = fileUrl.split('/').pop() || '';
-    link.click();
+    const linkElement = document.createElement('a');
+    linkElement.href = fileUrl;
+    linkElement.download = fileUrl.split('/').pop() || '';
+    linkElement.click();
   }
 }
