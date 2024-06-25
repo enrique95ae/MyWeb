@@ -12,14 +12,11 @@ export class ContactInfoComponent {
    title: string = 'Contact me';
   description: string = 'Feel free to contact me through any of the following:';
 
-  // Website URL
   websiteUrl: string = 'https://www.linkedin.com/in/enrique-alonso-esposito-8a5827149/';
 
-  // Email details
   recipient: string = 'enrique95ae@gmail.com';
   subject: string = '[Enrique.dev] Interested in your portfolio!';
 
-  // File to download
   fileUrl: string = 'path/to/your/file.pdf';
 
   openWebsite() {
