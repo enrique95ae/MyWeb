@@ -92,7 +92,33 @@ export class ProjectsComponent {
           chipItems: [
             { color: '#FFDE57', text: 'Python' },
             { color: '#4584B6', text: 'REST API' },
-            { color: '#F29111', text: 'SQL' }
+            { color: '#B00B69', text: 'SQL' }
+          ]
+        }
+      ];
+    }
+    else if (selectedOption === 'other') {
+      this.projects = [
+        {
+          imageUrl: 'assets/HWA/HWA_API.png',
+          title: 'Code comments remover',
+          description: 'Simple program that removes the comments from all the files of an specified extension in a specific path and sub-folders. The GUI is created with TKInter. Supports: .css, .ts, .cs, .cpp and .py files and both inline and block comments.',
+          demoLink: '',
+          githubLink: 'https://github.com/enrique95ae/HealthApp_API',
+          chipItems: [
+            { color: '#FFDE57', text: 'Python' },
+            { color: '#4584B6', text: 'TkInter' },
+          ]
+        },
+         {
+          imageUrl: 'assets/HWA/HWA_API.png',
+          title: 'Bin & Obj delete',
+          description: 'For all the .NET developers, especially those working with Xamarin and MAUI, who struggle with the persistent compilation bugs in Visual Studio, this tool is here to help. It assists in deleting all the bin and obj folders of your solutions, and combined with a clean and rebuild, it should eliminate those annoying compile-time errors.',
+          demoLink: '',
+          githubLink: 'https://github.com/enrique95ae/HealthApp_API',
+          chipItems: [
+            { color: '#FFDE57', text: 'Python' },
+            { color: '#4584B6', text: 'TkInter' },
           ]
         }
       ];

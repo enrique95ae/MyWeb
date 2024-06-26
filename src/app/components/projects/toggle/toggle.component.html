@@ -1,5 +1,5 @@
 <div class="toggle-bar">
- <!-- <button
+  <!-- <button
     class="toggle-button"
     [class.selected]="selected === 'mobile'"
     (click)="select('mobile')"
@@ -19,5 +19,12 @@
     (click)="select('backend')"
   >
     Backend, services & APIs
+  </button>
+  <button
+    class="toggle-button"
+    [class.selected]="selected === 'other'"
+    (click)="select('other')"
+  >
+    Other programs
   </button>
 </div>
